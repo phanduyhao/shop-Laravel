@@ -1,0 +1,175 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.site-header__top.shop-details .header-left {
+  width: 190px !important; }
+.site-header__nav.shop-details {
+  justify-content: space-between !important; }
+  .site-header__nav.shop-details .other-search {
+    width: 670px !important;
+    margin-left: -120px; }
+.site-header__slide .banner {
+  background-image: url("../../images/shop-details/Bitmap.jpg");
+  padding: 12%;
+  background-size: cover; }
+  .site-header__slide .banner-title {
+    font-size: 50px;
+    color: #2A383A;
+    font-weight: 900; }
+.site-main__productDetail .crumb {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  font-weight: 700; }
+  .site-main__productDetail .crumb-home {
+    color: #4B845E; }
+.site-main__productDetail .crumb li {
+  font-weight: 400;
+  list-style-type: disc !important;
+  margin-left: 30px;
+  color: #2A383A; }
+  .site-main__productDetail .crumb li::marker {
+    color: #2A383A; }
+.site-main__productDetail .product {
+  display: flex; }
+  .site-main__productDetail .product-image {
+    display: flex;
+    margin-right: 4px; }
+    .site-main__productDetail .product-image__nav {
+      width: 106px;
+      margin: -4px 9px 4px 0; }
+      .site-main__productDetail .product-image__nav img {
+        padding-bottom: 12px; }
+      .site-main__productDetail .product-image__nav .slick-slide {
+        border: 1px solid #D6D8DB !important;
+        margin: 4px 0; }
+      .site-main__productDetail .product-image__nav.slick-current {
+        border: 1px solid #4B845E; }
+    .site-main__productDetail .product-image__for {
+      border: 1px solid #D6D8DB;
+      max-width: 400px;
+      height: 100%; }
+  .site-main__productDetail .product-infor {
+    margin-left: 35px;
+    color: #2A383A; }
+    .site-main__productDetail .product-infor .addCart {
+      display: flex; }
+    .site-main__productDetail .product-infor .addCart .number {
+      width: max-content;
+      border: 1px solid #D6D8DB;
+      border-radius: 3px; }
+    .site-main__productDetail .product-infor .producer {
+      font-weight: 600;
+      color: #4B845E;
+      text-transform: uppercase; }
+    .site-main__productDetail .product-infor .name {
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1.5em; }
+    .site-main__productDetail .product-infor .sku {
+      margin-bottom: 15px; }
+    .site-main__productDetail .product-infor .origin {
+      margin-bottom: 30px; }
+    .site-main__productDetail .product-infor .price {
+      margin-bottom: 40px; }
+    .site-main__productDetail .product-infor .price-decrease {
+      font-size: 36px;
+      font-weight: 900;
+      color: #4B845E; }
+    .site-main__productDetail .product-infor .price-origin {
+      margin-left: 20px;
+      text-decoration: line-through;
+      font-size: 30px;
+      color: #8C8C8C;
+      font-weight: 700; }
+    .site-main__productDetail .product-infor #numberInput {
+      width: 50px;
+      text-align: center;
+      height: 45px;
+      border-top: 0;
+      border-bottom: 0;
+      border-left: 1px solid #D6D8DB;
+      border-right: 1px solid #D6D8DB; }
+      .site-main__productDetail .product-infor #numberInput:focus {
+        outline: none; }
+    .site-main__productDetail .product-infor #decreaseButton, .site-main__productDetail .product-infor #increaseButton {
+      width: 30px;
+      font-size: 35px;
+      height: 45px;
+      vertical-align: middle;
+      border: 0;
+      color: #D6D8DB;
+      background: none; }
+    .site-main__productDetail .product-infor #increaseButton {
+      font-size: 25px;
+      margin-left: -5px;
+      padding-bottom: 5px; }
+    .site-main__productDetail .product-infor #decreaseButton {
+      margin-right: -5px;
+      padding-bottom: 47px; }
+    .site-main__productDetail .product-infor .btn-add {
+      width: 218px;
+      height: 47px;
+      border: 0;
+      background-color: #E89238;
+      color: white;
+      font-size: 16px !important;
+      font-weight: 700 !important;
+      margin-left: 10px;
+      border-radius: 3px; }
+.site-main__productDetail .inforDetails {
+  padding: 50px 0; }
+  .site-main__productDetail .inforDetails .cates {
+    padding-left: 130px;
+    border-bottom: 1px solid #D6D8DB;
+    padding-bottom: 30px; }
+    .site-main__productDetail .inforDetails .cates-item {
+      margin-right: 55px;
+      font-size: 22px; }
+    .site-main__productDetail .inforDetails .cates-content .contentCate {
+      display: none; }
+    .site-main__productDetail .inforDetails .cates-content .active {
+      display: block !important; }
+  .site-main__productDetail .inforDetails .contentCate {
+    padding-top: 30px; }
+    .site-main__productDetail .inforDetails .contentCate .text {
+      margin-right: 50px;
+      color: #737373;
+      line-height: 1.675em; }
+      .site-main__productDetail .inforDetails .contentCate .text i {
+        margin-right: 15px; }
+      .site-main__productDetail .inforDetails .contentCate .text p, .site-main__productDetail .inforDetails .contentCate .text ul {
+        margin-bottom: 15px; }
+        .site-main__productDetail .inforDetails .contentCate .text p li::before, .site-main__productDetail .inforDetails .contentCate .text ul li::before {
+          content: '\f00c';
+          font-family: 'Font Awesome 6 Free';
+          font-weight: 700;
+          margin-right: 10px; }
+.site-main__AccomProducts {
+  background-color: #F5F5F5; }
+  .site-main__AccomProducts .title {
+    font-size: 26px; }
+  .site-main__AccomProducts .products:nth-child(2) {
+    margin: 0 !important; }
+  .site-main__AccomProducts .products-item {
+    background: white;
+    min-height: 458px !important; }
+  .site-main__AccomProducts .products .price {
+    margin-top: -20px;
+    font-size: 18px;
+    display: inherit;
+    line-height: 1.7em; }
+    .site-main__AccomProducts .products .price-origin {
+      color: #8C8C8C;
+      text-decoration: line-through; }
+    .site-main__AccomProducts .products .price-dis {
+      font-weight: 900;
+      color: #4B845E;
+      margin-right: 10px; }
+.site-main__AccomProducts:nth-child(3) {
+  background-color: transparent !important; }
+
+/*# sourceMappingURL=shop-details.css.map */

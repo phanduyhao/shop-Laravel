@@ -1,0 +1,115 @@
+.register-contain{
+    margin: 63px 0 290px;
+    padding: 35px 25px 25px;
+    .active{
+        color: black;
+        border-bottom-color:#4B845E !important;
+    }
+    .left{
+        flex: 1;
+        &-head{
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+            color: #5e5e5e;
+            .join,.sign-in{
+                border-bottom: 2px solid #d7d7d7;
+                text-align: center;
+                padding: 12px 0 20px;
+            }
+            &::before{
+                content: ' ';
+                display: block;
+                height: 25px;
+                width: 2px;
+                background: #d7d7d7;
+                position: absolute;
+                right: 50%;
+            }
+        }
+        .title{
+            text-transform: uppercase;
+            text-align: center;
+            margin: 23px 0 17px;
+        }
+        .register-social {
+            justify-content: center;
+            margin-bottom: 6px;
+            &__btn{
+                font-weight: 900;
+                padding: 14px 22px;
+                border: 2px solid #d7d7d7;
+                margin: 0px 5px;
+                max-width: 140px;
+                width: 140px;
+                justify-content: space-between;
+                align-items: center;
+                img{
+                    //margin-right: ;
+                }
+            }
+            &__btn:nth-child(2){
+                p{
+                    transform: translateX(-10px);
+                }
+            }
+        }
+        .desc{
+            font-size: 14px;
+            text-align: center;
+            padding: 0 17px;
+        }
+        .register-form{
+            max-width: 325px;
+            margin: 0 auto;
+            &__item{
+                margin-bottom: 23px;
+                input{
+                    height: 45px;
+                    border: 1px solid #afaeae   ;
+                    border-radius: 0;
+                }
+                label{
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    font-size: 13px;
+                    color: #878787;
+                }
+                p{
+                    margin-top: 8px;
+                    color: #878787;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+                select{
+                    height: 40px;
+                    border: 1px solid #afaeae   ;
+                }
+                .select-contain:nth-child(1), .select-contain:nth-child(3){
+                    width: 20%;
+                }
+                .select-contain:nth-child(2){
+                    width: 50%;
+                    margin: 0 13px;
+                }
+                .check-label{
+                    margin: 0;
+                    font-size: 10px;
+                    text-transform: inherit;
+                    letter-spacing: 0.5px;
+                    margin-left: 20px;
+                }
+                .label-check{
+                    letter-spacing: 1.5px;
+                }
+                .menmale{
+                    margin-left: 43px;
+                }
+            }
+        }
+    }
+    .right{
+        flex: 1;
+    }
+}

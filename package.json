@@ -1,0 +1,23 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "run": "php artisan serve",
+        "makeController": "php artisan make:controller register ",
+        "makeController Full Class": "php artisan make:controller Admin/adminOrders --resource",
+        "makeModel-Controller-Migration": "php artisan make:model orders -mcr",
+        "RunPHPCommand": " php artisan tinker ",
+        "CreatePass":"echo bcrypt('Pass')",
+        "CreateMigration": "php artisan make:migration update_voucher4",
+        "makeMigration":"php artisan migrate",
+        "makeFormRequest":"php artisan make:request Menu/CreateFormRequest",
+        "list": "php artisan route:list"
+    },
+    "devDependencies": {
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.7.5",
+        "vite": "^4.0.0"
+    }
+}

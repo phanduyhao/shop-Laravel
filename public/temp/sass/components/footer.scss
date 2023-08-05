@@ -1,0 +1,254 @@
+@import 'mixin.scss';
+.footer{
+    background-color: #E1EDE5;
+    &-contact{
+        background-color: #D0E2D6;
+        padding: 25px 45px 40px 45px;
+        &__item{
+            font-size: 20px;
+            line-height: 1.4em;
+            font-weight: 500;
+            color: #2A383A;
+            .icon{
+                i{
+                    color: #4B845E;
+                    font-size: 32px;
+                    padding-right: 32px;
+                }
+            }
+        }
+        &__item.local{
+            padding-right: 45px;
+        }
+        &__item.email{
+            padding-left: 55px;
+        }
+        &__item.phone{
+            padding-left:86px ;
+            padding-right: 85px;
+        }
+        &__bar{
+            width: 1px;
+            background-color: #2A383A;
+            height: 39px;
+        }
+    }
+    &-content{
+        padding-bottom: 35px;
+        border-bottom: 1px solid #CDCDCD;
+        &__item:nth-child(2){
+            margin-left: 5px;
+            margin-right: -35px;
+        }
+        &__item{
+            .text{
+                text-align: justify;
+                color: #2A383A;
+                line-height: 1.75em;
+                max-width: 345px;
+            }
+            .title{
+                
+                padding: 15px 0;
+                font-size: 22px;
+            }
+            .list{
+                &-item{
+                    padding-top: 8px;
+                }
+            }
+            
+        }
+    }
+    &-final{
+        padding: 40px 0;
+        &__item{ 
+            color: #2A383A;
+            .title{
+                font-size: 26px;
+                letter-spacing: 2px;
+                padding-bottom: 5px;
+            }
+            .sendEmail{
+                &-input{
+                    padding-left: 20px;
+                    border-radius: 4px 0 0 4px;
+                    border: #4B845E 1px solid;
+                    height: 45px;
+                    width: 345px;
+                    font-size: 16px;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                &-btn{
+                    border: #4B845E 1px solid;
+                    border-radius: 0 4px 4px 0;
+                    background-color: #4B845E;
+                    color: white;
+                    height: 45px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    padding: 0 31px;
+
+                }
+            }
+            .social{
+                &-icon{
+                    width: 39px;
+                    height: 39px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #4B845E;
+                    border-radius: 50%  ;
+                    margin-left: 10px;
+
+                }
+                &-icon:nth-child(5){
+                    background-color: transparent;
+                }
+                i{
+                    color: white;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    &-note{
+        background-color: #4B845E;
+        color: white;
+        padding: 15px 0;
+    }
+}
+
+
+@media(max-width:1110px){
+    .site{
+        &-footer{
+            .footer{
+                &-contact{
+                    div:nth-child(3){
+                        padding: 0 30px;
+                    }
+                }
+                &-final,&-content{
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                &-final{
+                    &__item{
+                        .sendEmail{
+                            &-input{
+                                width: 250px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media(max-width:992px){
+    .site{
+        &-footer{
+            .footer{
+                &-contact{
+                    &__item{
+                        font-size: 16px !important;
+                        .icon{
+                            i{
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                    div:nth-child(1){
+                        padding-right: 15px;
+                    }
+                    div:nth-child(3){
+                        padding-right:0;
+                    }
+                    div:nth-child(5){
+                        padding-left: 15px;
+                    }
+                }
+                &-content{
+                    &__item:nth-child(3){
+                        margin-left:50px;
+                    }
+                    &__item{
+                        padding: 0 3px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media(max-width:768px){
+    .site{
+        &-footer{
+            .footer{
+                &-contact{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    &__bar{
+                        display: none;
+                    }
+                    &__item{
+                        padding: 15px 0 !important;
+                        font-size: 16px !important;
+                        .icon{
+                            i{
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                    div:nth-child(1){
+                        padding-right: 15px;
+                    }
+                    div:nth-child(3){
+                        padding-right:0;
+                    }
+                    div:nth-child(5){
+                        padding-left: 15px;
+                    }
+                }
+                &-content{
+                    padding: 30px;
+                    flex-direction: column;
+                    align-items: self-start;
+                    &__item:nth-child(3){
+                        margin-left:0px;
+                    }
+                    &__item{
+                        padding: 0 3px;
+                    }
+                }
+                &-final{
+                    padding: 0 30px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    &__item{
+                        padding: 15px 0;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media(max-width:400px){
+    .footer{
+        &-final{
+            &__item{
+                .sendEmail{
+                    &-input{
+                        width: 150px !important;
+                    }
+                }
+            }
+        }
+    }
+}

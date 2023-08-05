@@ -1,0 +1,57 @@
+$primary-color: #4B845E;
+$white-color: #ffffff;
+$secondary-color: #2A383A;
+$gray-color: #F5F5F5;
+$radio-size: 15px;
+$radio-color: #111111;
+$label-color: #333;
+$label-font-size: 16px;
+$label-margin: 10px;
+
+@mixin flex($align-item, $justify-content) {
+	display: flex !important;
+	align-items: $align-item !important;
+	justify-content: $justify-content !important;
+}
+@mixin padding($padding){
+	padding: $padding !important;
+}
+@mixin flex-column($align-item, $justify-content) {
+	display: flex;
+	flex-direction: column;
+	align-items: $align-item;
+	justify-content: $justify-content;
+}
+
+@mixin css3($name, $value) {
+	#{$name}: $value;
+}
+
+@mixin radio-styles {
+	display: inline-block;
+	width: $radio-size;
+	height: $radio-size;
+	border: 2px solid $radio-color;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+  
+	&:checked {
+	  background: $radio-color;
+	}
+  }
+  
+  // Selector
+  input[type="radio"] {
+	@include radio-styles;
+  }
+
+@mixin label-styles {
+	color: $label-color;
+	font-size: $label-font-size;
+	margin-bottom: $label-margin;
+  }
+  
+  // Selector
+  label {
+	@include label-styles;
+  }
